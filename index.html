@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="first">PAYMENT FORM</h1>
+    <hr>
+    <nav>
+    <h2 >User Information</h2>
+    <p >Name* : <input type="text" name="name" required placeholder="X Y Z"></p>
+    <p >Birth Date* : <input type="date" name="b_date" id=""></p>
+    <fieldset>
+        <legend>Gender *</legend>
+    <p >
+        
+        Male <input type="radio" name="gender" id="male" required>
+        Female <input type="radio" name="gender" id="female" required>
+        Other <input type="radio" name="gender" id="other" required>
+        
+    </p></fieldset>
+    <p >Mobile No.* : <input type="number" name="mobile" id="moile" required placeholder="0000000000"></p>
+    <p >Email* : <input type="email" name="email" id="email" required placeholder="@gmail.com"></p>
+    <p >Address : <br><textarea name="address" id="address" cols="40" rows="3" placeholder="INDIA"></textarea></p>
+    <p >PIN CODE* : <input type="number" name="pincode" id="pincode" required placeholder="000000"></p>
+    <hr>
+    <h2 >Payment Information</h2>
+    
+        <p >Amount to Pay* <br> <input type="number" name="amount" id="amount" required></p>
+        <p >Payment Option* : 
+            <select class="sel" name="payment_option" id="payment_option" required>
+                <option value="">Select payment option</option>
+                <option value="debit">Debit card</option>
+                <option value="creadit">Creadit Card</option>
+                <option value="visa">Visa</option>
+            </select>
+        </p>
+        <p >Expiration Date* : <input  type="date" name="expiration" id="expiration" required></p>
+        <p >Card name* : <input  type="text" name="cname" id="cname" required placeholder="XYZ"></p>
+        <p >Card No.* : <input  type="number" name="cnumber" id="cnumber" required placeholder="00000000"></p>
+        <p >Card PIN No.* : <input  type="password" name="pinnumber" id="pinnumber" required></p>
+
+
+    <hr>
+    <input  type="submit" value="Pay Now">
+    <input  type="reset" value="Reset">
+</nav>
+</body>
+</html>
